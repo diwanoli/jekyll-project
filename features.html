@@ -1,0 +1,25 @@
+---
+layout : default
+---
+
+<section>
+<div class="row">
+    <div class="col-md-12">
+
+            <div class="col-lg-6">
+                <ul >
+                    {% for feature in site.data.features %}
+                    <li>
+                        <i class="{{feature.imgClass}}" ></i>
+                        <div>
+                            <h4>{{feature.title}}</h4>
+                            <p>{{feature.content}}</p>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+    </div>
+</div>
+</section>
